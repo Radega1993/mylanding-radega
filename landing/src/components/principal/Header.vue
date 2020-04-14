@@ -1,30 +1,41 @@
 <template>
-  <!-- Full Page Image Header with Vertically Centered Content -->
-  <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-12 text-center">
-          <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-          <p class="lead">A great starter layout for a landing page</p>
-        </div>
+<!-- Full Page Image Header with Vertically Centered Content -->
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <img alt="Radega logo" src="../../assets/logo.png">
+        <h1 class="display-4 text-white">Never give up!</h1>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
 }
 </script>
 
 <style scoped>
-  .masthead {
-    height: 100vh;
-    min-height: 500px;
-    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background: #000 url('../../assets/fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.masthead:hover {
+  height: 100vh;
+  min-height: 500px;
+  background:
+    url('../../assets/fondo.png'),
+    radial-gradient(at center, #1D1D95, #000000);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 </style>
