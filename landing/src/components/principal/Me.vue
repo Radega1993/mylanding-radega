@@ -1,18 +1,31 @@
 <template>
-    <section class="py-5">
-      <div class="container">
-        <h2 class="font-weight-light">Page Content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col text-center">
+        <img src="../../assets/me.jpg" class="rounded-circle" style="width:30%">
+        <h2 class="font-weight-light text-orange">{{title}}</h2>
+        <p>{{msg}}</p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 </template>
 
 <script>
 export default {
-    name: 'Me',
+  name: 'Me',
+  data() {
+    return {
+      title: '¡Hola!',
+      msg: 'Soy Raul de Arriba y soy desarroyador. Tengo pasión por la tecnología y el deporte, adoro convertir ideas en realidades.'
+    }
+  }
 }
 </script>
 
 <style scoped>
-
+.text-orange{
+  color: #D6A006;
+}
 </style>
