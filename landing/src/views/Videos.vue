@@ -1,16 +1,16 @@
 <template>
 <div class="contacto container">
-  <EmailContacto />
+  <Video />
 </div>
 </template>
 
 <script>
-import EmailContacto from '@/components/EmailContacto.vue'
+import Video from '@/components/Video.vue'
 
 export default {
   name: 'Contacto',
   components: {
-    EmailContacto
+    Video
   }
 }
 </script>

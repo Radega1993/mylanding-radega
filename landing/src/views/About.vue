@@ -1,5 +1,19 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <AboutSkills/>
+    <Footer/>
   </div>
 </template>
+
+<script>
+
+import Footer from '@/components/Footer.vue'
+import AboutSkills from '@/components/about/AboutSkills.vue'
+
+export default {
+  name: 'About',
+  components: {
+    AboutSkills, Footer
+  }
+}
+</script>

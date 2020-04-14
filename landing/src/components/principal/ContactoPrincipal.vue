@@ -21,9 +21,9 @@
 
     <div class="row align-items-center">
       <div class="col text-center">
-        <button type="button" class="btn btn-primary custom-btn">
+        <a href="mailto:rauldearriba@gmail.com" role="button" class="btn btn-primary custom-btn">
           <i class="far fa-envelope fa-lg"></i> Contacta conmigo!
-        </button>
+        </a>
       </div>
     </div>
 
@@ -49,7 +49,7 @@ export default {
     return {
       title: 'Te puedo ayudar.',
       subtitle: 'Estoy disponible para proyectos freelance.',
-      msg: 'Si tienes un proyecto y crees que te puedo ayudar, no dudes en ponerte en contacto conmigo o simplemte dime "hola" para estar en contacto!'
+      msg: '¿Tienes alguna pregunta?, ¿Tienes algún problema?, ¿Tienes algún proyecto en mente que quieras realizar? Si tienes un proyecto y crees que te puedo ayudar, no dudes en ponerte en contacto conmigo o simplemte dime "hola" para estar en contacto!'
     }
   }
 }

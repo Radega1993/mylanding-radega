@@ -1,0 +1,63 @@
+<template>
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col text-center margin-top-100">
+        <h3 class="font-weight-light  text-orange">{{title}}</h3>
+        <br /><br />
+      </div>
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="../../assets/about/fe.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="../../assets/about/be.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="../../assets/about/ot.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      title: 'Mis Skills.'
+    }
+  }
+}
+</script>
+
+<style lang="css" scoped>
+.text-orange{
+  color: #D6A006;
+}
+
+.text-orange-subheader{
+  color: #DEA811;
+}
+
+.margin-top-100 {
+  margin-top: 100px;
+}
+
+</style>
