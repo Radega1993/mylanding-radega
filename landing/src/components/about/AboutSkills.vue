@@ -4,35 +4,27 @@
     <div class="row align-items-center">
       <div class="col text-center margin-top-100">
         <h3 class="font-weight-light  text-orange">{{title}}</h3>
-        <br /><br />
+        <p>Soy un chico de 27 años que le apasiona la tecnología el deporte y el emprendimiento. Estoy terminando mi grado en ingeniería informática y
+          hago diferentes proyectos en mi tiempo libre.</p>
+        <br />
       </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
       <div class="card-deck">
-        <div class="card">
-          <img class="card-img-top" src="../../assets/about/fe.png" alt="Card image cap">
+        <div class="card" v-for="(skill, index) in skills" :key="index">
+          <img class="card-img-top" :src="skill.img" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">{{skill.title}}</h5>
           </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="../../assets/about/be.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="../../assets/about/ot.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" v-for="(item, index) in skill.tecno" :key="index">{{item}}</li>
+          </ul>
         </div>
       </div>
     </div>
+
+
   </div>
 </section>
 </template>
@@ -41,7 +33,24 @@
 export default {
   data() {
     return {
-      title: 'Mis Skills.'
+      title: 'Mis Skills.',
+      skills: {
+        frontend: {
+          title: 'Frontend',
+          img: require('../../assets/about/fe.png'),
+          tecno: ['VueJS', 'Javascript', 'Bootstrap', 'HTML/CSS', 'Flutter']
+        },
+        backend: {
+          title: 'Backend',
+          img: require('../../assets/about/be.png'),
+          tecno: ['Python', 'NodeJS', 'MongoDB', 'SQL']
+        },
+        otras: {
+          title: 'Otras',
+          img: require('../../assets/about/ot.png'),
+          tecno: ['Unit Testing', 'Balsamiq', 'Wordpress', 'Sysadmin', 'Linux']
+        },
+      }
     }
   }
 }

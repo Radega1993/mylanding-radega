@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col text-center">
-        <img src="../../assets/me.jpg" class="rounded-circle" style="width:30%">
+        <img src="../../assets/mec.png" class="rounded-circle" style="width:30%">
         <h2 class="font-weight-light text-orange">{{title}}</h2>
         <p>{{msg}}</p>
       </div>
